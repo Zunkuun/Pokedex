@@ -1,3 +1,6 @@
+import SearchBar from "./components/SearchBar";
+import ErrorMessage from "./components/ErrorMessage";
+import PokemonList from "./components/PokemonList";
 
 export default function App() {
   return (

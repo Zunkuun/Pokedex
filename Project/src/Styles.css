@@ -1,0 +1,122 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1b1b2f, #162447);
+  color: white;
+  min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL */
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* APP */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcb05;
+  text-shadow: 2px 2px #2a75bb;
+}
+
+/* FORM DE BUSCA */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 220px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #ffcb05;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ffcb05;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #f5b800;
+  transform: scale(1.05);
+}
+
+/* ERRO */
+p {
+  text-align: center;
+}
+
+p[style] {
+  color: red;
+  font-weight: bold;
+}
+
+/* LISTA */
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* CARD POKÉMON */
+.card {
+  background: #ffffff10;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff30;
+  border-radius: 15px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* NOME DO POKÉMON */
+.card h2 {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcb05;
+}
+
+/* IMAGEM */
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+/* INFO */
+.card p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #ddd;
+}
