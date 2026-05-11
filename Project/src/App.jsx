@@ -4,8 +4,8 @@ import PokemonList from "./components/PokemonList";
 
 export default function App() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>🔥 Pokédex</h1>
+    <div className="app-container">
+      <h1 className="main-title">🔥 Pokédex</h1>
       <SearchBar />
       <ErrorMessage />
       <PokemonList />
